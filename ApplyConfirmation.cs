@@ -37,5 +37,10 @@ namespace Half_Life_Background_Changer
 
             return form.Result;
         }
+
+        private void uLabel3_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

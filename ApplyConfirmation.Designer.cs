@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.mbOverwrite = new CSCSCH.MetroBox();
-            this.mbBackup = new CSCSCH.MetroBox();
-            this.divider1 = new CSCSCH.Divider();
-            this.uLabel2 = new Half_Life_Background_Changer.ULabel();
             this.uLabel3 = new Half_Life_Background_Changer.ULabel();
+            this.mbBackup = new CSCSCH.MetroBox();
+            this.uLabel2 = new Half_Life_Background_Changer.ULabel();
+            this.divider1 = new CSCSCH.Divider();
             this.uLabel1 = new Half_Life_Background_Changer.ULabel();
             this.mbOverwrite.SuspendLayout();
             this.mbBackup.SuspendLayout();
@@ -51,6 +51,22 @@
             this.mbOverwrite.Size = new System.Drawing.Size(168, 36);
             this.mbOverwrite.TabIndex = 3;
             // 
+            // uLabel3
+            // 
+            this.uLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.uLabel3.ClickedColor = System.Drawing.Color.Orange;
+            this.uLabel3.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uLabel3.Enabled = false;
+            this.uLabel3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uLabel3.ForeColor = System.Drawing.Color.OrangeRed;
+            this.uLabel3.Location = new System.Drawing.Point(0, 0);
+            this.uLabel3.Name = "uLabel3";
+            this.uLabel3.Size = new System.Drawing.Size(168, 36);
+            this.uLabel3.TabIndex = 5;
+            this.uLabel3.Text = "Continue To Overwrite File";
+            this.uLabel3.Click += new System.EventHandler(this.uLabel3_Click);
+            // 
             // mbBackup
             // 
             this.mbBackup.BackColor = System.Drawing.Color.Transparent;
@@ -63,17 +79,6 @@
             this.mbBackup.Name = "mbBackup";
             this.mbBackup.Size = new System.Drawing.Size(128, 36);
             this.mbBackup.TabIndex = 2;
-            // 
-            // divider1
-            // 
-            this.divider1.BackColor = System.Drawing.Color.Transparent;
-            this.divider1.DarkBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.divider1.LightBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.divider1.Location = new System.Drawing.Point(7, 45);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(355, 2);
-            this.divider1.TabIndex = 0;
-            this.divider1.Text = "divider1";
             // 
             // uLabel2
             // 
@@ -90,20 +95,16 @@
             this.uLabel2.TabIndex = 9;
             this.uLabel2.Text = "Backup File";
             // 
-            // uLabel3
+            // divider1
             // 
-            this.uLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.uLabel3.ClickedColor = System.Drawing.Color.Orange;
-            this.uLabel3.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.uLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uLabel3.Enabled = false;
-            this.uLabel3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uLabel3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.uLabel3.Location = new System.Drawing.Point(0, 0);
-            this.uLabel3.Name = "uLabel3";
-            this.uLabel3.Size = new System.Drawing.Size(168, 36);
-            this.uLabel3.TabIndex = 5;
-            this.uLabel3.Text = "Continue To Overwrite File";
+            this.divider1.BackColor = System.Drawing.Color.Transparent;
+            this.divider1.DarkBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.divider1.LightBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.divider1.Location = new System.Drawing.Point(7, 45);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(355, 2);
+            this.divider1.TabIndex = 0;
+            this.divider1.Text = "divider1";
             // 
             // uLabel1
             // 
